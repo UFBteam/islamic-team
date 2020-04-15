@@ -1,0 +1,192 @@
+/* main rules */
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    overflow: hidden;
+}
+/*  start form */
+
+.sign-in{
+    display: flex;
+    width: 100%;
+    height:100vh;
+}
+.sign-in .img{
+    width: 50%;
+    background: url(../imgs/٢٠٢٠٠٤١٥_٠٠٥٣٥٢.png);
+    background-size:cover ;
+    transform: translateX(-2px);
+}
+.sign-in .form{
+    width: 50%;
+    padding: 3% 5% 1% 1%;
+    position: relative;
+}
+.sign-in .form h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.sign-in .form form{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sign-in .form form div:first-of-type{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.sign-in .form form div:first-of-type input{
+    width:100%;
+    margin-bottom: 35px;
+    outline: none;
+    padding:13px 13px 15px 1px ;
+    font-size: 20px;
+    color:rgb(73, 73, 73) ;
+    border: none;
+    border-bottom: 2px solid #b2b2b2;
+    transition: .3s all linear;
+}
+.sign-in .form form div:first-of-type label{
+    position: absolute;
+    font-size:17px;
+    font-weight: bold;
+    color:#b2b2b2;
+    transition: .3s all linear;
+}
+.sign-in .form form div:first-of-type label:nth-child(1){
+    right:13px;
+    top:2%;
+}
+.sign-in .form form div:first-of-type label:nth-child(3){
+    right:13px;
+    top:27%;
+}
+.sign-in .form form div:first-of-type label:nth-child(5){
+    right:13px;
+    top:52%;
+}
+.sign-in .form form div:first-of-type label:nth-child(7){
+    right:13px;
+    top:77%;
+}
+.sign-in .form form > div:nth-of-type(2){
+    width:70%;
+    
+    display: flex;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+
+.sign-in .form form > div:nth-of-type(2) button{
+    line-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 33%;
+    font-size: 17px;
+    background: none;
+    border:2px solid #488199;
+    margin-left: 5%;
+    margin-right:1% ;
+    font-weight: bold;
+    transition: .3s all linear;
+}
+.sign-in .form form > div:nth-of-type(2) button:first-of-type{
+    color:#fff;
+    background-color: #488199;
+}
+.sign-in .form form > div:nth-of-type(2) button:first-of-type:hover{
+    color:#488199;
+    background:none;
+}
+.sign-in .form form > div:nth-of-type(2) aside{
+    display: flex;
+    width:95%;
+    
+    
+}
+.sign-in .form form > div:nth-of-type(2) aside span{
+    width:50%;
+    height:100%;
+    padding: 5px;
+    font-size:13px;
+    font-weight: bold;
+    display: none;
+    color:rgb(216, 55, 55);
+    background-color: rgba(216, 55, 55,.3);
+    border: 1px solid rgb(216, 55, 55);
+}
+.sign-in .form form div:nth-of-type(3){
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.sign-in .form form div:nth-of-type(3) section{
+    width:35%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+.sign-in .form form div:nth-of-type(3) section div:first-of-type{
+    width:40px;
+    height:40px;
+    background-color: #b3aeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+}
+.sign-in .form form div:nth-of-type(3) section div:last-of-type{
+    width:85%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in .form form div:nth-of-type(3) section:first-of-type div:first-of-type{
+    color:#5861dd
+}
+.sign-in .form form div:nth-of-type(3) section:first-of-type div:last-of-type{
+    background-color: #5861dd;
+}
+.sign-in .form form div:nth-of-type(3) section:last-of-type div:first-of-type{
+    color:#f52905;
+}
+.sign-in .form form div:nth-of-type(3) section:last-of-type div:last-of-type{
+    background-color: #f52905;
+}
+/* .sign-in .form form div:nth-of-type(2) aside span.active{
+    display: block;
+} */
+footer{
+    position: absolute;
+    bottom: 10px;
+    width: 65%;
+    display: flex;
+}
+footer p{
+    position: absolute;
+    left: 1px;
+    text-align: left;
+    font-size: 15px;
+    color:#b2b2b2;
+}
+footer a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+}

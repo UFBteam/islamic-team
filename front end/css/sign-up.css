@@ -8,20 +8,20 @@
 }
 body{
     font-family: 'Cairo', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /*  start form */
 
 .sign-in{
     display: flex;
     width: 100%;
-    height:100vh;
+    height:auto;
 }
 .sign-in .img{
     width: 50%;
     background: url(../imgs/٢٠٢٠٠٤١٥_٠٠٥٣٥٢.png);
     background-size:cover ;
-    transform: translateX(-2px);
+    transform: translateX(-1%);
 }
 .sign-in .form{
     width: 50%;
@@ -129,7 +129,7 @@ body{
     width:100%;
     display:flex;
     flex-wrap: wrap;
-    
+    margin-bottom: 20px;
 }
 .sign-in .form form div:nth-of-type(3) section{
     width:35%;
@@ -172,20 +172,19 @@ body{
     display: block;
 } */
 footer{
-    position: absolute;
-    bottom: 10px;
+    
     width: 65%;
     display: flex;
 }
 footer p{
-    position: absolute;
-    left: 1px;
+    
     text-align: left;
     font-size: 15px;
     color:#b2b2b2;
 }
 footer a{
     text-decoration: none;
+    margin-left: 5%;
     color:black;
     font-weight: bold;
     font-size: 15px;

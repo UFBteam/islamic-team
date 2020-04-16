@@ -8,24 +8,24 @@
 }
 body{
     font-family: 'Cairo', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /*  start form */
 
 .sign-in{
     display: flex;
     width: 100%;
-    height:100vh;
+    height:auto;
 }
 .sign-in .img{
     width: 50%;
     background: url(../imgs/٢٠٢٠٠٤١٥_٠٠٥٣٥٢.png);
     background-size:cover ;
-    transform: translateX(-2px);
+    transform: translateX(-1%);
 }
 .sign-in .form{
     width: 50%;
-    padding: 6.5% 5% 1% 1%;
+    padding: 4.5% 5% 1% 1%; 
     position: relative;
 }
 .sign-in .form h1{
@@ -34,17 +34,18 @@ body{
     margin-bottom: 40px;
 }
 .sign-in .form form{
-    width:70%;
+    width:100%;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
 }
-.sign-in .form form div:first-of-type{
-    width: 100%;
+.sign-in .form form > div:first-of-type{
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
-.sign-in .form form div:first-of-type input{
+.sign-in .form form > div:first-of-type input{
     width:100%;
     margin-bottom: 50px;
     outline: none;
@@ -55,47 +56,47 @@ body{
     border-bottom: 2px solid #b2b2b2;
     transition: .3s all linear;
 }
-.sign-in .form form div:first-of-type label{
+.sign-in .form form > div:first-of-type label{
     position: absolute;
     font-size:17px;
     font-weight: bold;
     color:#b2b2b2;
     transition: .3s all linear;
 }
-.sign-in .form form div:first-of-type label:first-of-type{
+.sign-in .form form > div:first-of-type label:first-of-type{
     top: 13px;
     right:13px
 }
-.sign-in .form form div:first-of-type label:last-of-type{
+.sign-in .form form > div:first-of-type label:last-of-type{
     top: 119px;
     right:13px
 }
-.sign-in .form form div:nth-of-type(2){
-    width: 100%;
+.sign-in .form form > div:nth-of-type(2){
+    width: 70%;
     
     display: flex;
     position: relative;
     margin-bottom: 30px;
 }
-.sign-in .form form div:nth-of-type(2) span{
+.sign-in .form form > div:nth-of-type(2) span{
     display: flex;
     width: 50%;
     flex-wrap: nowrap;
     justify-content: right;
     align-items: center;
 }
-.sign-in .form form div:nth-of-type(2) span input{
+.sign-in .form form > div:nth-of-type(2) span input{
     width: 18px;
     height: 18px;
     
     margin-left: 10px;
 }
-.sign-in .form form div:nth-of-type(2) span label{
+.sign-in .form form > div:nth-of-type(2) span label{
     color:#b2b2b2;
     font-size:17px;
     font-weight: bold;
 }
-.sign-in .form form div:nth-of-type(2) a{
+.sign-in .form form > div:nth-of-type(2) a{
     text-decoration: none;
     display: block;
     position: absolute;
@@ -104,13 +105,13 @@ body{
     font-size:18px;
     font-weight: bold;
 }
-.sign-in .form form div:nth-of-type(3){
-    width:100%;
-
+.sign-in .form form > div:nth-of-type(3){
+    width:70%;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap:wrap;
 }
-.sign-in .form form div:nth-of-type(3) button{
+.sign-in .form form > div:nth-of-type(3) button{
     line-height: 50px;
     border-radius: 10px;
     cursor: pointer;
@@ -123,36 +124,79 @@ body{
     font-weight: bold;
     transition: .3s all linear;
 }
-.sign-in .form form div:nth-of-type(3) button:first-of-type{
+.sign-in .form form > div:nth-of-type(3) button:first-of-type{
     color:#fff;
     background-color: #488199;
 }
-.sign-in .form form div:nth-of-type(3) button:first-of-type:hover{
+.sign-in .form form > div:nth-of-type(3) button:first-of-type:hover{
     color:#488199;
     background:none;
 }
-.sign-in .form form div:nth-of-type(3) button:last-of-type{
+.sign-in .form form > div:nth-of-type(3) button:last-of-type{
     color:#488199;
     background:none;
 }
-.sign-in .form form div:nth-of-type(3) button:last-of-type:hover{
+.sign-in .form form > div:nth-of-type(3) button:last-of-type:hover{
     color:#fff;
     background-color: #488199;
+}
+.sign-in .form form > div:nth-of-type(4){
+    width:100%;
+    
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.sign-in .form form > div:nth-of-type(4) section{
+    width:35%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+.sign-in .form form > div:nth-of-type(4) section div:first-of-type{
+    width:40px;
+    height:40px;
+    background-color: #b3aeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+}
+.sign-in .form form > div:nth-of-type(4) section div:last-of-type{
+    width:85%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in .form form > div:nth-of-type(4) section:first-of-type div:first-of-type{
+    color:#5861dd
+}
+.sign-in .form form > div:nth-of-type(4) section:first-of-type div:last-of-type{
+    background-color: #5861dd;
+}
+.sign-in .form form > div:nth-of-type(4) section:last-of-type div:first-of-type{
+    color:#f52905;
+}
+.sign-in .form form > div:nth-of-type(4) section:last-of-type div:last-of-type{
+    background-color: #f52905;
 }
 footer{
-    position: absolute;
-    bottom: 10px;
-    width: 65%;
+    
+    width: 80%;
     display: flex;
 }
 footer p{
-    position: absolute;
-    left: 1px;
+    
     text-align: left;
     font-size: 15px;
     color:#b2b2b2;
 }
 footer a{
+    margin-left: 40%;
     text-decoration: none;
     color:black;
     font-weight: bold;

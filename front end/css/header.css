@@ -1,0 +1,199 @@
+/* main rules */
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+}
+/*start header  */
+header{
+    position: fixed;
+    z-index: 110;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:100px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+header > div:first-of-type {
+    width: 15%;
+    display: flex;
+    height: auto;
+    margin-left: 8%;
+}
+header > div:first-of-type > div:first-of-type{
+    width: 33%;
+    margin-left: 4%;
+}
+header > div:first-of-type > div:first-of-type img{
+    width: 100%;
+}
+header > div:first-of-type > div:last-of-type{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div:first-of-type > div:last-of-type p{
+    
+    font-size: 16px;
+    font-weight: bold;
+}
+header > div:nth-of-type(2) {
+    position: relative;
+    width:36.5%;
+    position: relative;
+}
+header > div:nth-of-type(2) input{
+    width: 100%;
+    padding: 3.1% ;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    color:#79797a;
+    font-size:17px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+header > div:nth-of-type(2) input::placeholder{
+    font-size:15px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    color:#949494;
+
+}
+header > div:nth-of-type(2) i{
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    color:#79797a;
+    font-size:17px;
+    cursor: pointer;
+    display: block;
+}
+header > div:last-of-type{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 3px;
+    left:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header > div:last-of-type > div{
+    width: 38px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    
+
+    
+}
+header > div:last-of-type > div > div{
+    background-color: #79797a;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 10px;
+    transition: .3s all linear;
+}
+header > div:last-of-type > div > div:first-of-type.active{
+    transform: rotate(45deg);
+    margin-bottom: 0;
+}
+header > div:last-of-type > div > div:nth-of-type(2).active{
+    display: none;
+}
+header > div:last-of-type > div > div:last-of-type.active{
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+}
+nav{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    width: 220px;
+    height: 100%;
+    box-shadow: 10px 0px 20px 5px #d5d5d7 inset;
+    background-color: #f2f2f5;
+    padding: 5% 0 5% 0;
+    transition: .3s all linear;
+    overflow: hidden;
+    transform: translatex(230px);
+}
+nav.active{
+    transform: translatex(0)
+}
+
+nav ul {
+    margin-top: 35%;
+    position: relative;
+}
+
+nav ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 70px;
+    padding: 2% 0;
+    list-style: none;
+    cursor: pointer;
+    transition: .1s all linear;
+}
+nav ul li.active{
+    background-color: #fff;
+    position: relative;
+}
+nav ul li:first-of-type span{
+    content:"" ;
+    display: block;
+    width: 5px;
+    height: 70px;
+    z-index: 120;
+    background-color: #488199;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s all linear;
+}
+nav ul li > div:first-of-type{
+    color: #000000;
+    font-size: 23px;
+    width: 60px;
+    height: 60px;
+    padding: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 2%;
+}
+nav ul li > div:last-of-type {
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size:15px;
+    color:#79797a;
+}
+section div{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    margin-bottom: 30px;
+}

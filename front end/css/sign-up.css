@@ -125,48 +125,89 @@ body{
     background-color: rgba(216, 55, 55,.3);
     border: 1px solid rgb(216, 55, 55);
 }
-.sign-in .form form div:nth-of-type(3){
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
+.sign-in .form form > div:nth-of-type(3){ 
+    width:70%;
+   
     margin-bottom: 20px;
 }
-.sign-in .form form div:nth-of-type(3) section{
-    width:35%;
-    margin-left: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+.sign-in .form form > div:nth-of-type(3) h2{
+    text-align: center;
+    
+    
+    margin-bottom: 20px;
+}
+.sign-in .form form > div:nth-of-type(3) button{
+    line-height:30px ;
+    margin:0 auto 15px auto ;
+    display: block;
+    background:none;
+    border:none;
     cursor: pointer;
+    padding: 2.3% 0;
+    width: 220px;
+    position: relative;
 }
-.sign-in .form form div:nth-of-type(3) section div:first-of-type{
-    width:40px;
-    height:40px;
-    background-color: #b3aeae;
+.sign-in .form form > div:nth-of-type(3) button:first-of-type{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background: #5861dd;
+    border:2px solid #5861dd;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .3s all linear;
+}
+
+.sign-in .form form > div:nth-of-type(3) button:first-of-type span{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:18px;
+    width: 20%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #5861dd;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #fff;
+    transition: .3s all linear;
 }
-.sign-in .form form div:nth-of-type(3) section div:last-of-type{
-    width:85%;
-    height:40px;
+.sign-in .form form > div:nth-of-type(3) button:first-of-type:hover span{
+    color: #fff;
+    background: #5861dd;
+}
+.sign-in .form form > div:nth-of-type(3) button:last-of-type{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background: #f52905;
+    border:2px solid #f52905;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .3s all linear;
+}
+
+.sign-in .form form > div:nth-of-type(3) button:last-of-type span{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f52905;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #fff;
+    transition: .3s all linear;
 }
-.sign-in .form form div:nth-of-type(3) section:first-of-type div:first-of-type{
-    color:#5861dd
-}
-.sign-in .form form div:nth-of-type(3) section:first-of-type div:last-of-type{
-    background-color: #5861dd;
-}
-.sign-in .form form div:nth-of-type(3) section:last-of-type div:first-of-type{
-    color:#f52905;
-}
-.sign-in .form form div:nth-of-type(3) section:last-of-type div:last-of-type{
-    background-color: #f52905;
+.sign-in .form form > div:nth-of-type(3) button:last-of-type:hover span{
+    color: #fff;
+    background: #f52905;
 }
 /* .sign-in .form form div:nth-of-type(2) aside span.active{
     display: block;

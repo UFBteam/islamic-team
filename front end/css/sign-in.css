@@ -25,7 +25,7 @@ body{
 }
 .sign-in .form{
     width: 50%;
-    padding: 4.5% 5% 1% 1%; 
+    padding: 3.5% 5% 1% 1%; 
     position: relative;
 }
 .sign-in .form h1{
@@ -47,7 +47,7 @@ body{
 }
 .sign-in .form form > div:first-of-type input{
     width:100%;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     outline: none;
     padding:15px 15px 17px 1px ;
     font-size: 20px;
@@ -140,15 +140,93 @@ body{
     color:#fff;
     background-color: #488199;
 }
-.sign-in .form form > div:nth-of-type(4){
-    width:100%;
-    
-    display:flex;
-    flex-wrap: wrap;
+ .sign-in .form form > div:nth-of-type(4){ 
+    width:70%;
+   
     margin-bottom: 20px;
 }
+.sign-in .form form > div:nth-of-type(4) h2{
+    text-align: center;
+    
+    
+    margin-bottom: 20px;
+}
+.sign-in .form form > div:nth-of-type(4) button{
+    line-height:30px ;
+    margin:0 auto 15px auto ;
+    display: block;
+    background:none;
+    border:none;
+    cursor: pointer;
+    padding: 2.3% 0;
+    width: 220px;
+    position: relative;
+}
+.sign-in .form form > div:nth-of-type(4) button:first-of-type{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background: #5861dd;
+    border:2px solid #5861dd;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .3s all linear;
+}
+
+.sign-in .form form > div:nth-of-type(4) button:first-of-type span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #5861dd;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #fff;
+    transition: .3s all linear;
+}
+.sign-in .form form > div:nth-of-type(4) button:first-of-type:hover span{
+    color: #fff;
+    background: #5861dd;
+}
+.sign-in .form form > div:nth-of-type(4) button:last-of-type{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background: #f52905;
+    border:2px solid #f52905;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .3s all linear;
+}
+
+.sign-in .form form > div:nth-of-type(4) button:last-of-type span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f52905;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #fff;
+    transition: .3s all linear;
+}
+.sign-in .form form > div:nth-of-type(4) button:last-of-type:hover span{
+    color: #fff;
+    background: #f52905;
+}
+/*
 .sign-in .form form > div:nth-of-type(4) section{
-    width:35%;
+    width:25%;
     margin-left: 3%;
     display: flex;
     justify-content: center;
@@ -156,34 +234,37 @@ body{
     flex-wrap: nowrap;
     cursor: pointer;
 }
-.sign-in .form form > div:nth-of-type(4) section div:first-of-type{
-    width:40px;
-    height:40px;
-    background-color: #b3aeae;
+.sign-in .form form > div:nth-of-type(4) section button{
+    width:60px;
+    height:60px;
+    cursor: pointer;
+    transition: .3s all linear;
+    border-radius: 50%;
+    padding:5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:18px;
 }
-.sign-in .form form > div:nth-of-type(4) section div:last-of-type{
-    width:85%;
-    height:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.sign-in .form form > div:nth-of-type(4) section:first-of-type button{
+    color:#5861dd;
+    border:2px solid #5861dd;
 }
-.sign-in .form form > div:nth-of-type(4) section:first-of-type div:first-of-type{
-    color:#5861dd
-}
-.sign-in .form form > div:nth-of-type(4) section:first-of-type div:last-of-type{
+.sign-in .form form > div:nth-of-type(4) section:first-of-type button:hover{
+    color:#fff;
     background-color: #5861dd;
+    border:2px solid #5861dd;
 }
-.sign-in .form form > div:nth-of-type(4) section:last-of-type div:first-of-type{
+.sign-in .form form > div:nth-of-type(4) section:last-of-type button{
     color:#f52905;
+    border: 2px solid #f52905;
 }
-.sign-in .form form > div:nth-of-type(4) section:last-of-type div:last-of-type{
+.sign-in .form form > div:nth-of-type(4) section:last-of-type button:hover{
+    color:#fff;
     background-color: #f52905;
-}
+    border: 2px solid #f52905;
+} */
 footer{
     
     width: 80%;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>islamic</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/sign-in.css">
+        <link rel="stylesheet" href="/static/fontaw/css/all.css">
+    </head>
+    <body>
+        <section class="sign-in">
+            <div class="form">
+                <h1>
+                    اهلا بك
+                </h1>
+                <form action=""method="POST">
+                    {%csrf_token%}
+                    <div>
+                        <label for="email" id="label-e">الايميل</label>
+                        <input type="email" name="email" id="input-e">
+                        <label for="password" id="label-p" >
+                            كلمة المرور
+                        </label>
+                        <input type="password" name="password" id="input-p">
+                    </div>
+                    <div>
+                        
+                        <span>
+                            <input type="checkbox">
+                        <label for="checkbox">
+                            تذكرني
+                        </label>
+                        </span>
+                        <a href="#">
+                            نسيت كلمه المرور
+                        </a>
+                    </div>
+                    <div class="buttons">
+                        <a href="/signup/">تسجيل</a>
+                        <button type="submit">تسجيل الدخول</button>
+                    </div>
+                    <div>
+                        
+                            <h2>او</h2>
+                            <button>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                التسجيل بالفيسبوك
+                                <a href="{% url 'social:begin' 'facebook' %}"></a>
+                            </button>
+                            <button>
+                                <span><i class="fab fa-google-plus-g"></i></span>
+                                التسجيل بجوجل
+                            </button>
+                            <!-- <section>
+                                <div><i class="fab fa-facebook-f"></i></div>
+                                <div> التسجيل بالفيسبوك </div>
+                            </section>
+                            <section>
+                                <div><i class="fab fa-google-plus-g"></i></div>
+                                <div>التسجيل بجوجل </div>
+                            </section> -->
+                        
+                    </div>
+                </form>
+                <footer>
+                    
+                    <a href="#">المساعدة</a>
+                    <p>&copy; جميع الحقوق محفوظة </p>
+                </footer>
+            </div>
+            <div class="img">
+
+            </div>
+            
+        </section>
+        <script src="/static/js/sign-in.js"></script>
+    </body>
+</html>

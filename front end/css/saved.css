@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+* {
+    font-family: 'Cairo', sans-serif;
+    outline: none;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.center-content {
+    position: relative;
+    right: 325px;
+    padding: 40px;
+}
+.saved-item {
+    background: #fff;
+    width: 50%;
+    border-radius: 10px;
+    border: solid 1px #ccc;
+    margin-bottom: 40px;
+}
+.question-saved {
+    padding: 30px;
+}
+.profile-pic {
+    height: 70px;
+    margin-left: 30px;
+}
+.shiekh-name {
+    font-size: 1.2rem;
+    position: relative;
+    top: -20px;
+    font-weight: 700;
+}
+.ask {
+    margin: 30px 0 10px 0;
+}
+.question, .ans {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #488199;
+    margin-left: 20px;
+}
+.question-description, .answer-description {
+    color: #79797a;
+    font-weight: bold;
+}
+.react {
+    margin-top: 100px;
+}
+.react-item {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.react-item i {
+    margin-left: 5px;
+}
+hr {
+    background: #ccc;
+    margin-top: -5px;
+}
+.write-comment {
+    padding: 0 30px;
+}
+.comment-field {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
+    top: -25px;
+    border: none;
+    background: #daecf5;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+    .center-content {
+        padding: 10px;
+        right: 0;
+    }
+    .saved-item {
+        width: 100%;
+    }
+    .question-saved {
+        padding: 15px;
+    }
+    .react {
+        margin-top: 50px;
+    }
+    .react-item {
+        width: 31%;
+    }
+    .write-comment {
+        padding: 0 10px;
+    }
+    .comment-field {
+        width: 70%;
+    }
+} 

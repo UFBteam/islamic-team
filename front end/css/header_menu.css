@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+* {
+    font-family: 'Cairo', sans-serif;
+    outline: none;
+    text-align: right;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    position: relative;
+}
+.avatar {
+    height: 80px;
+    margin-left: 30px;
+}
+.usrename {
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+    top: -30px;
+}
+.search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+}
+.search {
+    width: 80%;
+    border: solid 1px #ccc;
+    height: 50px;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #d5d5d7;
+}
+.search-icon {
+    padding: 16px;
+    border: solid 1px #ccc;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #d5d5d7;
+    position: relative;
+    top: -1px;
+    left: 5px;
+    color: rgb(150, 150, 150);
+}
+.m-menu {
+    padding: 0;
+    display: none;
+    list-style-type: none;
+}
+
+
+/* Contect */
+.contect {
+    position: relative;
+    width: 100%;
+    background: #ebebeb;
+}
+.menu {
+    display: inline-block;
+    width: 17%;
+    border: solid 1px #707070;
+    padding: 50px 0;
+    box-shadow: 70px 0 100px -7px #d5d5d7 inset;
+    height: 100vh;
+    position: absolute;
+    background: #fff;
+}
+.menu i {
+    font-size: 2rem;
+    margin-left: 10px;
+    color: #79797a;
+}
+.menu a {
+    color: #79797a;
+    
+}
+.menu-content {
+    padding: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+.menu-content .item-name {
+    color: #79797a;
+    font-weight: 800;
+}
+.menu-content.active {
+    background: #fff;
+    width: 101%;
+    border-right: solid 8px #488199;
+    color: #488199;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+    .menu {
+        display: none;
+    }
+    .search-bar {
+        display: none;
+    }
+    .header {
+        padding: 10px;
+    }
+    .m-menu-b {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 35px;
+        cursor: pointer;
+    }
+    .m-menu {
+        transition: .5s;
+        display: block;
+        background: #ccc;
+        height: 0;
+        overflow: hidden;
+    }
+    .m-menu .menu-content {
+        padding: 10px;
+    }
+    .m-menu .active {
+        border: none;
+    }
+    .m-menu .item-name {
+        margin-left: 20px;
+    }
+    .menu-bars {
+        height: 2px;
+        width: 25px;
+        margin-bottom: 5px;
+        background: #000;
+        transition: .5s;
+    }
+}

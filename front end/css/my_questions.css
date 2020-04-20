@@ -6,103 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Header */
-.header {
-    padding: 40px;
-    position: relative;
-}
-.avatar {
-    height: 80px;
-    margin-left: 30px;
-}
-.usrename {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-.search-bar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 20%;
-}
-.search {
-    width: 80%;
-    border: solid 1px #ccc;
-    height: 50px;
-    padding: 20px;
-    font-size: 1.2rem;
-    font-family: 'FontAwesome';
-    border-left: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: #d5d5d7;
-}
-.search-icon {
-    padding: 16px;
-    border: solid 1px #ccc;
-    border-right: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background: #d5d5d7;
-    position: relative;
-    top: -1px;
-    left: 5px;
-}
-.profile-pic {
-    transition: .5s;
-}
-.profile-pic:hover {
-    transform: scale(1.5);
-}
-.search::placeholder {
-    transition: .5s;
-}
-.search:hover::placeholder {
-    color: #ccc;
-}
-.m-menu {
-    display: none;
-}
-
-
 /* Contect */
-.contect {
-    position: relative;
-    width: 100%;
-    background: #ebebeb;
-}
-.menu {
-    display: inline-block;
-    width: 17%;
-    border: solid 1px #707070;
-    padding: 50px 0;
-    box-shadow: 70px 0 100px -7px #d5d5d7 inset;
-    height: 100vh;
-    position: absolute;
-}
-.menu i {
-    font-size: 2rem;
-    margin-left: 10px;
-}
-.menu-content {
-    padding: 30px;
-    transition: .5s;
-    cursor: pointer;
-}
-.menu-content .item-name {
-    color: #79797a;
-    font-weight: 800;
-}
-.menu-content.active {
-    background: #fff;
-    width: 101%;
-    border-right: solid 8px #488199;
-    color: #488199;
-}
-.menu-content:hover {
-    color: #488199;
-}
 .center-contect {
     padding: 70px;
     width: 55%;
@@ -112,6 +16,7 @@
     right: 300px;
 }
 .post-item {
+    background: #fff;
     padding: 50px;
     border: solid 1px #ccc;
     border-radius: 5px;
@@ -120,10 +25,15 @@
 .shiekh-name {
     font-size: 1.2rem;
     font-weight: 700;
+    position: relative;
+    top: -30px;
 }
 .ask {
-    padding-top: 40px;
+    padding: 20px;
     font-size: 1.2rem;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 .question, .answer {
     color: #488199;
@@ -149,9 +59,6 @@
 
 /* Media Query */
 @media (max-width: 1200px) {
-    .menu {
-        display: none;
-    }
     .center-contect {
         position: relative;
         width: 100%;
@@ -159,49 +66,13 @@
         right: 0;
         display: block;
     }
-    .search-bar {
-        display: none;
-    }
     .not-answered {
         display: block;
         position: relative;
         right: 0;
         width: 100%;
     }
-    .header {
+    .post-item {
         padding: 20px;
-    }
-    .profile-pic:hover {
-        transform: scale(1);
-    }
-    .m-menu-b {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: 50px;
-        cursor: pointer;
-    }
-    .m-menu {
-        transition: .5s;
-        display: block;
-        background: #ccc;
-        height: 0;
-        overflow: hidden;
-    }
-    .m-menu .menu-content {
-        padding: 10px;
-    }
-    .m-menu .active {
-        border: none;
-    }
-    .m-menu .item-name {
-        margin-left: 20px;
-    }
-    .menu-bars {
-        height: 2px;
-        width: 25px;
-        margin-bottom: 5px;
-        background: #000;
-        transition: .5s;
     }
 }
